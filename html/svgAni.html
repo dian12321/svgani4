@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        
+
+        body {
+            background: linear-gradient(128deg, #FA00FF 3.27%, #B639FF 29.04%, #00D1FF 98.56%);
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .myPath {
+            fill:none;
+            
+            stroke: #fff;
+            stroke-width: 2;
+            stroke-dasharray: 12 10;
+        
+            stroke-dashoffset: 200;
+          /* 속도,. 양수는 오른쪽,음수는 왼쪽으로 돌아감 */
+           animation: drawDash 4s infinite; 
+        }
+        
+        @keyframes drawDash {
+            to {stroke-dashoffset: 0;
+            
+
+            }
+        }
+    </style>
+</head>
+<body>
+   <!-- 타겟블랭크. 링크클릭시 별도의 브라우저에서 사이트나옴 -->
+    <a href="https://www.naver.com" target="_blank">
+    <svg width="192" height="153" viewBox="0 0 192 153" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path  class="myPath" d="M17.6545 73.1564L68.0326 132.4C82.5308 149.45 110.094 149.45 124.592 132.4L174.971 73.1564C187.843 58.0184 187.843 36.5082 174.971 21.3702C156.127 -0.789738 112.573 5.79177 96.3125 29.6942C80.0521 5.79177 36.4982 -0.789735 17.6545 21.3702C4.78185 36.5082 4.78182 58.0184 17.6545 73.1564Z" stroke="#7B8395" stroke-width="14.7188" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    
+        
+    </svg>
+</body>
+</html>

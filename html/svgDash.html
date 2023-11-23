@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        @keyframes drawDash {
+            to {stroke-dashoffset: 0;
+            
+
+            }
+        }
+
+        .myPath {
+            fill:none;
+            stroke: #000;
+            stroke-width: 2;
+            stroke-dasharray: 20 5;
+            /* 20픽셀의 선, 5픽셀의 여백 */
+            stroke-dashoffset: 700;
+          /* 속도,. 양수는 오른쪽,음수는 왼쪽으로 돌아감 */
+           animation: drawDash 4s forwards; 
+        }
+    </style>
+</head>
+<body>
+    <svg width="300" height="150" xmlns="http://www.w3.org/2000/svg">
+        <path class="myPath" d="m10 80 Q95 10 180 80"></path>
+        <!-- d의 M은 시작점, Q는 제어점
+        시작점10, 80에서 시작하여 제어점 95,10 경유하여 
+    끝점 180,80으로 이어지는 곡선 -->
+    </svg>
+</body>
+</html>
